@@ -94,7 +94,7 @@ function generateText(){
 	var loader = new THREE.FontLoader();
 	loader.load( 'https://raw.githubusercontent.com/ellenprobst/it-s-alive/master/scripts/optimer_regular.typeface.json', function ( font ) {
 
-	var textGeometry = new THREE.TextGeometry( "A friend for yow", {
+	var textGeometry = new THREE.TextGeometry( "A friend for yow <3", {
 	    font: font,
 	    size: 7.5,
 	    height: 3,
