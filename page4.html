@@ -3,16 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <title>Hi, ugly!</title>
-  <link rel="stylesheet" href="./style1.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:900'><link rel="stylesheet">
   <link rel="icon" href="img/cat.ico" type="image/x-icon" />
+  <style>
+    body {
+        margin: 0;
+        background: #000f1d;
+    }
 
+    div{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-family: "Source Sans Pro";
+        
+        font-weight: 100;
+        -webkit-user-select: none;
+        user-select: none;
+        text-align: center;
+    }
+
+    h1 {text-align: center;font-size: 2em;}
+    p {text-align: center;font-size: 0.8em;}
+
+  .gift-box {
+    background-color: #ff3366;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .button {
+    background-color: #fff;
+    color: #020202;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .button:hover {
+    background-color: #ff3366;
+    color: #fff;
+  }
+  </style>
 </head>
 <body>
-<!-- partial:index.partial.html -->
-
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/86/three.min.js'></script>
-<script src='https://codepen.io/ste-vg/pen/MmqOpb.js'></script><script  src="./script1.js"></script>
-
+    <div>
+        <h1>What's the difference between you and a hat?</h1>
+        <p>I can take my hat off my head, but not you :v</p>
+        <br>
+        <img src="yowrizz.png" width="150">
+        <p><a href="page5.html"><button class="button" id="giftButton">click here for another one</button></a></p>
+    </div>
 </body>
 </html>
