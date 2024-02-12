@@ -94,9 +94,9 @@ function generateText(){
 	var loader = new THREE.FontLoader();
 	loader.load( 'https://raw.githubusercontent.com/ellenprobst/it-s-alive/master/scripts/optimer_regular.typeface.json', function ( font ) {
 
-	var textGeometry = new THREE.TextGeometry( "A friend for yow <3", {
+	var textGeometry = new THREE.TextGeometry( "  A friend\nfor yow <3", {
 	    font: font,
-	    size: 7.5,
+	    size: 6,
 	    height: 3,
 	    curveSegments: 20
 	  });
@@ -108,7 +108,7 @@ function generateText(){
 	var mesh = new THREE.Mesh( textGeometry, textMaterial );
 	mesh.scale.z =mesh.scale.y=mesh.scale.x=.3;
 	mesh.position.y = -10;
-	mesh.position.x = -10;
+	mesh.position.x = -6;
 	mesh.rotation.y = .3;
 	  
 	scene.add( mesh );
