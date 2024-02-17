@@ -52,8 +52,8 @@ function init() {
 	
 	var sphere = new THREE.SphereGeometry( 0.1, 16, 8 );
 	for (var i = 0; i <= 8; i++) {
-		light = new THREE.PointLight( 16726440, .8, 10 );
-		light.add( new THREE.Mesh( sphere, new THREE.MeshBasicMaterial( { color: 16726440 } ) ) );
+		light = new THREE.PointLight( 16711680, .8, 10 );
+		light.add( new THREE.Mesh( sphere, new THREE.MeshBasicMaterial( { color: 16711680 } ) ) );
 		
 		scene.add( light );
 		pointLights.push(light);
@@ -102,7 +102,7 @@ function generateText(){
 	  });
 
 	var textMaterial = new THREE.MeshPhongMaterial( 
-	    { color: 16726440, specular: 0xffffff }
+	    { color: 16711680, specular: 0xffffff }
 	);
 
 	var mesh = new THREE.Mesh( textGeometry, textMaterial );
